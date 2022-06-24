@@ -18,7 +18,7 @@ pub enum SupportedTextureFormats {
 }
 
 impl SupportedTextureFormats {
-    pub fn get_vec4_indices(&self) -> Vec<usize> {
+    pub fn get_rgb_indices(&self) -> Vec<usize> {
         match self {
             SupportedTextureFormats::Rgba8 => vec![0, 1, 2, 3],
             SupportedTextureFormats::Bgra8 => vec![2, 1, 0, 3],
